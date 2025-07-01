@@ -4,27 +4,27 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta name="description" content="BeaVR: Bimanual, multi-Embodiment, Accessible VR Teleoperation - An open-source, end-to-end teleoperation pipeline leveraging affordable VR hardware for robotics">
+  <meta property="og:title" content="BeaVR: Accessible VR Teleoperation"/>
+  <meta property="og:description" content="Open-source VR teleoperation system using Meta Quest 3 for bimanual robot control with simulation parity and multi-embodiment support"/>
   <meta property="og:url" content="URL OF THE WEBSITE"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/beavr_banner.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="BeaVR: Accessible VR Teleoperation">
+  <meta name="twitter:description" content="Open-source VR teleoperation system using Meta Quest 3 for bimanual robot control">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/beavr_banner.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="VR teleoperation, robotics, bimanual manipulation, Meta Quest, affordable robotics, open source, robot control, VR, teleoperation, dexterous manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>BeaVR: Bimanual, multi-Embodiment, Accessible VR Teleoperation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -36,6 +36,97 @@
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+
+  <style>
+    /* Enhanced Title Styling */
+    .publication-title {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    
+    .publication-subtitle {
+      color: #4a5568;
+      font-weight: 600;
+      margin-top: 0.5rem !important;
+    }
+    
+    .section-title {
+      position: relative;
+      color: #2d3748;
+      font-weight: 700;
+      margin-bottom: 2rem !important;
+      padding-bottom: 1rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      border-radius: 2px;
+    }
+    
+    .subsection-title {
+      color: #4a5568;
+      font-weight: 600;
+      position: relative;
+      padding-left: 1rem;
+    }
+    
+    .subsection-title::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #667eea, #764ba2);
+      border-radius: 2px;
+    }
+    
+    .feature-highlight {
+      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+    }
+    
+    .tech-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      margin: 0.25rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .enhanced-hr {
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #667eea, #764ba2, transparent);
+      margin: 1.5rem 0;
+    }
+    
+    .section-intro {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: #4a5568;
+      margin-bottom: 2rem;
+    }
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
@@ -52,50 +143,41 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">BeaVR</h1>
+            <h2 class="title is-3 publication-subtitle">Bimanual, multi-Embodiment, Accessible VR Teleoperation</h2>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="#" target="_blank">Alejandro Carrasco</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="#" target="_blank">Alejandro Posadas-Nava</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="#" target="_blank">Victor Rodriguez-Fernandez</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                    <a href="#" target="_blank">Richard Linares</a><sup>1</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology<br><sup>2</sup>Universidad Politécnica de Madrid<br>Submitted to ICCR 2025, Kyoto</span>
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                         <!-- ArXiv Paper Link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="our-arxiv-link" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="ai ai-arxiv"></i>
                         </span>
                         <span>Paper</span>
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="our-github-page" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,14 +186,14 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
+                <!-- VR App link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://github.com/ARCLab-MIT/BeaVR-app" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <i class="fas fa-vr-cardboard"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>VR App</span>
                 </a>
               </span>
             </div>
@@ -133,7 +215,7 @@
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        BeaVR demonstrates accessible VR teleoperation with low-latency control and visual feedback through Meta Quest 3, enabling dexterous bimanual manipulation across different robot morphologies without requiring motion-capture stages or proprietary hardware.
       </h2>
     </div>
   </div>
@@ -145,10 +227,16 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
+        <h2 class="title is-3 section-title">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            BeaVR is an open-source, end-to-end teleoperation pipeline that leverages affordable hardware for robotics teleoperation. Building upon Open Teach, we address its accessibility limitations and improve upon their bimanual teleoperation methodology to create a more robust and user-friendly system.
+          </p>
+          <p>
+            Our system enables <span class="feature-highlight">VR teleoperation out-of-the-box</span> through Meta Quest 3 with low-latency control and visual feedback while recording synchronized proprioceptive, visual, and action data. BeaVR provides <span class="feature-highlight">multi-embodiment support</span> with drivers for RX-1 humanoid and xArm + LeapHand work-cells, and maintains <span class="feature-highlight">simulation parity</span> in MuJoCo and Isaac Gym for domain-randomized policy training.
+          </p>
+          <p>
+            The system is designed to be <span class="feature-highlight">accessible</span> with no proprietary hardware requirements, <span class="feature-highlight">modular</span> with clean Python and ROS modules, and <span class="feature-highlight">community-driven</span> with LeRobot formatted data collection. BeaVR enables capture of single-hand, bi-manual, or whole-body demonstrations for manipulation, assembly, or locomotion tasks using only commodity PCs and student-budget friendly hardware.
           </p>
         </div>
       </div>
@@ -157,128 +245,245 @@
 </section>
 <!-- End paper abstract -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<!-- Figures -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">System Architecture & Components</h2>
+        <hr class="enhanced-hr">
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">System Overview</h3>
+            <img src="static/images/system_architecture.png" alt="BeaVR System Architecture"/>
+            <p class="subtitle is-6">End-to-end pipeline from VR input to robot control</p>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Hardware Setup</h3>
+            <img src="static/images/hardware_setup.png" alt="BeaVR Hardware Components"/>
+            <p class="subtitle is-6">Low-cost, accessible components: <span class="tech-badge">Meta Quest 3</span> + <span class="tech-badge">Commodity Hardware</span></p>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Control Flow</h3>
+            <img src="static/images/control_flow.png" alt="BeaVR Control Flow Diagram"/>
+            <p class="subtitle is-6">Real-time hand pose tracking to robot motion commands</p>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Data Collection</h3>
+            <img src="static/images/data_collection.png" alt="BeaVR Data Collection Pipeline"/>
+            <p class="subtitle is-6">Synchronized proprioceptive, visual, and action data recording</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End youtube video -->
+<!-- End figures -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
+<!-- VR Teleoperation Demo -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">VR Teleoperation</h2>
+        <hr class="enhanced-hr">
+        <div class="content has-text-justified">
+          <p>
+            Hand poses captured by Meta Quest 3 are converted into robot motion control commands for real-time teleoperation. 
+            BeaVR prioritizes accessibility and safety through affordable hardware, collision avoidance, and low-latency control, 
+            enabling robots to perform complex bimanual manipulation tasks safely in teleoperation mode.
+          </p>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
+        <div class="publication-video">
+          <video poster="" id="teleoperation-demo" autoplay controls muted loop height="100%">
+            <source src="static/videos/teleoperation_demo.mp4" type="video/mp4">
           </video>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End VR teleoperation demo -->
 
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+<!-- Low-Cost Robot Platforms -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Low-Cost, Effective Robot Platforms</h2>
+        <hr class="enhanced-hr">
+        <div class="content has-text-justified">
+          <p>
+            BeaVR demonstrates teleoperation effectiveness across different morphologies using affordable, accessible hardware. 
+            Our system works seamlessly with both industrial robotic arms and humanoid robots, proving that high-quality 
+            teleoperation doesn't require expensive proprietary equipment.
+          </p>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Industrial Robotic Arm</h3>
+            <p class="subtitle is-6"><span class="feature-highlight">Cost-effective</span> manipulation platform</p>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/industrial_arm_teleoperation.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-grey">Precise bimanual control for assembly and manipulation tasks</p>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">RX-1 Humanoid Robot</h3>
+            <p class="subtitle is-6"><span class="feature-highlight">Affordable</span> full-body teleoperation</p>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/rx1_humanoid_teleoperation.mp4" type="video/mp4">
+            </video>
+            <p class="has-text-grey">Whole-body coordination for complex locomotion and manipulation</p>
+          </div>
+        </div>
+        <div class="content has-text-centered">
+          <p class="subtitle is-5">
+            <strong>Both platforms demonstrate real-time, low-latency VR teleoperation with minimal hardware investment</strong>
+          </p>
+        </div>
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+  </div>
+</section>
+<!-- End low-cost robot platforms -->
 
+
+
+
+
+
+
+<!-- Accessibility vs Proprietary Systems -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Accessible Hardware</h2>
+        <hr class="enhanced-hr">
+        <div class="content has-text-justified">
+          <p>
+            BeaVR addresses accessibility limitations in existing teleoperation systems by using affordable, 
+            consumer-grade VR hardware. No proprietary equipment or motion-capture stages required - everything 
+            is student-budget friendly and permissively licensed.
+          </p>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Traditional Setup</h3>
+            <p class="subtitle is-6"><span class="tech-badge">Expensive</span> <span class="tech-badge">Proprietary</span></p>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/traditional_setup.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">BeaVR Setup</h3>
+            <p class="subtitle is-6"><span class="feature-highlight">Consumer VR</span> + <span class="feature-highlight">Commodity Hardware</span></p>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/beavr_setup.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End accessibility section -->
+
+<!-- Real-time Performance and Safety -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Real-time Performance and Safety</h2>
+        <hr class="enhanced-hr">
+        
+        <h3 class="title is-4 subsection-title">Low-Latency Control</h3>
+        <div class="content has-text-justified">
+          <p>
+            BeaVR achieves low-latency VR teleoperation with synchronized proprioceptive, visual, and action data recording. 
+            The system maintains real-time performance while ensuring safe operation through collision avoidance and 
+            singularity checks.
+          </p>
+        </div>
+        <div class="publication-video">
+          <video poster="" autoplay controls muted loop height="100%">
+            <source src="static/videos/latency_demo.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <h3 class="title is-4 subsection-title">Collision Avoidance</h3>
+        <div class="content has-text-justified">
+          <p>
+            Our safety system prevents collisions in real-time while maintaining natural teleoperation. 
+            The robot intelligently navigates around obstacles without compromising task performance.
+          </p>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <h4 class="title is-6">w/o collision avoidance</h4>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/no_collision_avoidance.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-half">
+            <h4 class="title is-6">w/ collision avoidance</h4>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/with_collision_avoidance.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End real-time performance section -->
+
+<!-- Simulation Parity -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Simulation Parity</h2>
+        <hr class="enhanced-hr">
+        <div class="content has-text-justified">
+          <p>
+            BeaVR mirrors every real-world session in MuJoCo or Isaac Gym for rapid domain-randomized policy training 
+            and sim-to-real transfer. This enables efficient data collection and policy learning without requiring 
+            extensive real-robot time.
+          </p>
+        </div>
+        <div class="columns is-multiline">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Real Robot</h3>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/real_robot_task.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Simulation</h3>
+            <video poster="" autoplay controls muted loop height="100%">
+              <source src="static/videos/simulation_task.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End simulation parity -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <h2 class="title section-title">BibTeX</h2>
+      <pre><code>@article{carrasco2025beavr,
+    title   = {BeaVR: Bimanual, multi-Embodiment, Accessible VR Teleoperation}, 
+    author  = {Alejandro Carrasco and Alejandro Posadas-Nava and Victor Rodriguez-Fernandez and Richard Linares},
+    year    = {2025},
+    journal = {Submitted to ICCR 2025, Kyoto},
+    url     = {our-github-page}, 
+}</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -288,12 +493,10 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> by Eliahua Horwitz, which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
 
         </div>
