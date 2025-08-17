@@ -198,10 +198,11 @@
 </section>
 
 
-<!-- Teaser video-->
+<!-- Video introduction -->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
+      <h2 class="title is-3 section-title has-text-centered">Video Introduction</h2>
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
         <source src="static/videos/banner_video.mp4"
@@ -213,7 +214,7 @@
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End video introduction -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -238,132 +239,105 @@
 </section>
 <!-- End paper abstract -->
 
-<!-- Tasks and Benchmarks -->
+<!-- Autonomous policy demos -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">Tasks and Benchmarks</h2>
+        <h2 class="title is-3 section-title">Autonomous Policy Demos</h2>
         <hr class="enhanced-hr">
-        <div class="content has-text-justified">
-          <p>
-            Representative task set used to evaluate BEAVR across two robot embodiments. Replace the placeholders with task-specific GIFs when ready.
-          </p>
-        </div>
-        <div class="columns is-multiline">
+        <div class="columns is-multiline is-variable is-5">
           <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Pour</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel1.jpg" alt="Expected GIF: tasks/pour_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel2.jpg" alt="Expected GIF: tasks/pour_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
+            <h3 class="title is-5 subsection-title">DiffusionPolicy — Pickup (front view)</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/autonomous/diffusion_pickup.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Flip Cube</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel3.jpg" alt="Expected GIF: tasks/flip_cube_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel4.jpg" alt="Expected GIF: tasks/flip_cube_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
+            <h3 class="title is-5 subsection-title">DiffusionPolicy — Pickup (top view)</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/autonomous/diffusion_pickup_above.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Pickup</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel2.jpg" alt="Expected GIF: tasks/pickup_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel3.jpg" alt="Expected GIF: tasks/pickup_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
+            <h3 class="title is-5 subsection-title">SmolVLA — Pickup (front view)</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/autonomous/smolvla_pickup.mp4" type="video/mp4">
+            </video>
           </div>
           <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Lantern Grasp</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel4.jpg" alt="Expected GIF: tasks/lantern_grasp_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel1.jpg" alt="Expected GIF: tasks/lantern_grasp_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Knockover</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel1.jpg" alt="Expected GIF: tasks/knockover_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel2.jpg" alt="Expected GIF: tasks/knockover_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
-          </div>
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Stack Blocks</h3>
-            <div class="columns">
-              <div class="column is-half">
-                <img src="static/images/carousel3.jpg" alt="Expected GIF: tasks/stack_blocks_arm.gif">
-                <p class="subtitle is-6">Industrial Arm (GIF placeholder)</p>
-              </div>
-              <div class="column is-half">
-                <img src="static/images/carousel4.jpg" alt="Expected GIF: tasks/stack_blocks_rx1.gif">
-                <p class="subtitle is-6">RX-1 Humanoid (GIF placeholder)</p>
-              </div>
-            </div>
+            <h3 class="title is-5 subsection-title">SmolVLA — Pickup (top view)</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/autonomous/smolvla_pickup_above.mp4" type="video/mp4">
+            </video>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!-- Replace the <img> srcs above with GIFs under static/gifs/tasks/... when available -->
 </section>
-<!-- End tasks and benchmarks -->
+<!-- End autonomous policy demos -->
+
+<!-- Teleoperated demos -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Teleoperated Demos</h2>
+        <hr class="enhanced-hr">
+        <div class="columns is-multiline is-variable is-5">
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Flip Cube</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/flip_cube.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Grasp Lantern</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/grasp_lantern.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Pickup Box</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/pickup_box.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Pour</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/pour.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Stack Blocks</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/stack_blocks.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="column is-one-third">
+            <h3 class="title is-6 subsection-title">Tape Insert</h3>
+            <video class="beavr-video" autoplay muted loop controls>
+              <source src="static/videos/teleop/tape_insert.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teleoperated demos -->
 <!-- Figures -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">System Architecture & Components</h2>
+        <h2 class="title is-3 section-title">System Overview</h2>
         <hr class="enhanced-hr">
-        <div class="columns is-multiline">
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">System Overview</h3>
-            <img src="static/images/carousel1.jpg" alt="BEAVR System Architecture"/>
-            <p class="subtitle is-6">End-to-end pipeline from VR input to robot control</p>
-          </div>
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Hardware Setup</h3>
-            <img src="static/images/carousel2.jpg" alt="BEAVR Hardware Components"/>
-            <p class="subtitle is-6">Low-cost, accessible components: <span class="tech-badge">Meta Quest 3</span> + <span class="tech-badge">Commodity Hardware</span></p>
-          </div>
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Control Flow</h3>
-            <img src="static/images/carousel3.jpg" alt="BEAVR Control Flow Diagram"/>
-            <p class="subtitle is-6">Real-time hand pose tracking to robot motion commands</p>
-          </div>
-          <div class="column is-half">
-            <h3 class="title is-5 subsection-title">Data Collection</h3>
-            <img src="static/images/carousel4.jpg" alt="BEAVR Data Collection Pipeline"/>
-            <p class="subtitle is-6">Synchronized proprioceptive, visual, and action data recording</p>
-          </div>
+        <div class="content has-text-centered">
+          <img src="static/images/BeaVR_overview.png" alt="BEAVR System Architecture"/>
+          <p class="subtitle is-6">End-to-end pipeline from VR input to robot control</p>
         </div>
       </div>
     </div>
@@ -411,80 +385,121 @@
 
 
 
-<!-- Accessibility note (short, sober) -->
+<!-- Affordable hardware -->
 <section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">Accessibility</h2>
+        <h2 class="title is-3 section-title">Affordable Hardware</h2>
         <hr class="enhanced-hr">
         <div class="content has-text-justified">
           <p>
             BEAVR uses consumer VR and commodity hardware to enable affordable teleoperation without proprietary dependencies.
+            The reference setup employs <span class="tech-badge">Meta Quest 3</span> for hand tracking and VR streaming,
+            paired with standard compute and networked robot controllers, aligning with the accessibility goals described in the paper.
+            See the paper for details on latency and system design.
           </p>
+          <ul>
+            <li>Meta Quest 3 VR headset with controllers</li>
+            <li>Workstation-class PC with consumer GPU</li>
+            <li>Standard Ethernet/Wi‑Fi network</li>
+            <li>Robot platform(s) with network API</li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End accessibility note -->
+<!-- End affordable hardware -->
 
-<!-- Real-time Performance and Safety -->
+ 
+
+<!-- Results table (to be filled from paper) -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">Real-time Performance and Safety</h2>
+        <h2 class="title is-3 section-title">Results Summary</h2>
         <hr class="enhanced-hr">
-        
-        <h3 class="title is-4 subsection-title">Low-Latency Control</h3>
         <div class="content has-text-justified">
-          <p>
-            BEAVR achieves low-latency VR teleoperation with synchronized proprioceptive, visual, and action data recording. 
-            The system maintains real-time performance while ensuring safe operation through collision avoidance and 
-            singularity checks.
-          </p>
+          <p>Summary of results reported in the paper. Replace placeholder values with the exact numbers from the paper.</p>
         </div>
-        <div class="publication-video">
-          <video poster="" autoplay controls muted loop height="100%">
-            <source src="static/videos/banner_video.mp4" type="video/mp4">
-          </video>
+        <div class="table-container">
+          <table class="table is-striped is-fullwidth is-hoverable">
+            <thead>
+              <tr>
+                <th>Task</th>
+                <th>Setting</th>
+                <th>Embodiment</th>
+                <th>Policy</th>
+                <th>Metric</th>
+                <th>Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pickup</td>
+                <td>Autonomous</td>
+                <td>Arm / Humanoid</td>
+                <td>DiffusionPolicy / SmolVLA</td>
+                <td>Success Rate</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Flip Cube</td>
+                <td>Teleop</td>
+                <td>Arm / Humanoid</td>
+                <td>—</td>
+                <td>Success Rate</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Pour</td>
+                <td>Teleop</td>
+                <td>Arm / Humanoid</td>
+                <td>—</td>
+                <td>Success Rate</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Stack Blocks</td>
+                <td>Teleop</td>
+                <td>Arm / Humanoid</td>
+                <td>—</td>
+                <td>Success Rate</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td>Tape Insert</td>
+                <td>Teleop</td>
+                <td>Arm / Humanoid</td>
+                <td>—</td>
+                <td>Success Rate</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-
-        
+        <p class="has-text-grey is-size-7">Populate with exact values from the paper [<a href="https://arxiv.org/abs/2508.09606" target="_blank" rel="noopener">arXiv</a>].</p>
       </div>
     </div>
   </div>
 </section>
-<!-- End real-time performance section -->
-
-<!-- Paper Figure -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">System Overview (from Paper)</h2>
-        <hr class="enhanced-hr">
-        <figure>
-          <img src="static/images/paper_figure_overview.png" alt="Paper figure placeholder: system overview">
-          <figcaption class="has-text-grey">Figure: System overview diagram adapted from the paper (placeholder).</figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper figure -->
+<!-- End results table -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title section-title">BibTeX</h2>
-      <pre><code>@article{carrasco2025beavr,
-    title   = {BEAVR: Bimanual, multi-Embodiment, Accessible VR Teleoperation}, 
-    author  = {Alejandro Carrasco and Alejandro Posadas-Nava and Victor Rodriguez-Fernandez and Richard Linares},
-    year    = {2025},
-    journal = {Submitted to ICCR 2025, Kyoto},
-    url     = {https://github.com/ARCLab-MIT/beavr-bot}, 
+      <pre><code>@misc{posadasnava2025beavr,
+  title         = {BEAVR: Bimanual, multi-Embodiment, Accessible, Virtual Reality Teleoperation System for Robots},
+  author        = {Alejandro Posadas-Nava and Alejandro Carrasco and Richard Linares},
+  year          = {2025},
+  eprint        = {2508.09606},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.RO},
+  note          = {Accepted for presentation at ICCR 2025, Kyoto},
+  url           = {https://arxiv.org/abs/2508.09606}
 }</code></pre>
     </div>
 </section>
