@@ -203,10 +203,12 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="title is-3 section-title has-text-centered">Video Introduction</h2>
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
+      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="auto" playsinline>
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
+        <source src="static/videos/BeaVR_intro_v1.mov"
+        type="video/mp4"
+        preload="auto"
+        playsinline>
       </video>
       <h2 class="subtitle has-text-centered">
         BEAVR demonstrates accessible VR teleoperation with low-latency control and visual feedback through Meta Quest 3, enabling dexterous bimanual manipulation across different robot morphologies without requiring motion-capture stages or proprietary hardware.
@@ -270,11 +272,11 @@
             <video class="beavr-video" autoplay muted loop controls>
               <source src="static/videos/autonomous/smolvla_pickup_above.mp4" type="video/mp4">
             </video>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+              </div>
+            </div>
 </section>
 <!-- End autonomous policy demos -->
 
@@ -303,19 +305,19 @@
             <video class="beavr-video" autoplay muted loop controls>
               <source src="static/videos/teleop/pickup_box.mp4" type="video/mp4">
             </video>
-          </div>
+              </div>
           <div class="column is-one-third">
             <h3 class="title is-6 subsection-title">Pour</h3>
             <video class="beavr-video" autoplay muted loop controls>
               <source src="static/videos/teleop/pour.mp4" type="video/mp4">
             </video>
-          </div>
+              </div>
           <div class="column is-one-third">
             <h3 class="title is-6 subsection-title">Stack Blocks</h3>
             <video class="beavr-video" autoplay muted loop controls>
               <source src="static/videos/teleop/stack_blocks.mp4" type="video/mp4">
             </video>
-          </div>
+            </div>
           <div class="column is-one-third">
             <h3 class="title is-6 subsection-title">Tape Insert</h3>
             <video class="beavr-video" autoplay muted loop controls>
@@ -337,7 +339,7 @@
         <hr class="enhanced-hr">
         <div class="content has-text-centered">
           <img src="static/images/BeaVR_overview.png" alt="BEAVR System Architecture"/>
-          <p class="subtitle is-6">End-to-end pipeline from VR input to robot control</p>
+            <p class="subtitle is-6">End-to-end pipeline from VR input to robot control</p>
         </div>
       </div>
     </div>
@@ -345,8 +347,32 @@
 </section>
 <!-- End figures -->
 
-<!-- Affordable hardware -->
+<!-- Experimental Setup -->
 <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 section-title">Experimental Setup</h2>
+        <hr class="enhanced-hr">
+        <div class="content has-text-justified">
+          <p>
+            All experiments were conducted on an Alienware x16 R2 laptop equipped with an Intel Core Ultra 9 185H CPU and an NVIDIA GeForce RTX 4080 Max-Q GPU (12&nbsp;GB VRAM). The system runs Ubuntu 24.04.2 LTS with CUDA 12.8 and NVIDIA driver version 570.169. We use a fixed-base 7-DoF tabletop manipulator (XArm7) with a 16-DoF LEAP hand attached to the end effector, operating in a tabletop workspace. Two statically mounted RGB cameras (front-facing and overhead) capture synchronized streams at 480&times;640 resolution and 30&nbsp;FPS.
+          </p>
+          <p>We conduct three separate experiments:</p>
+          <ol>
+            <li>Three dexterous tasks demonstrating arm and hand use.</li>
+            <li>Success rate evaluation of three visuomotor policies for a given task.</li>
+            <li>System performance scaling analysis: latency, jitter, and frequency.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Experimental Setup -->
+
+<!-- Affordable hardware -->
+<section class="section hero">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -372,81 +398,131 @@
 </section>
 <!-- End affordable hardware -->
 
-<!-- Results table (to be filled from paper) -->
-<section class="section hero">
-  <div class="container is-max-desktop">
+<!-- Unified Results Section -->
+<section class="section hero is-light">
+  <div class="container is-fluid">
     <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 section-title">Results Summary</h2>
+      <div class="column is-11">
+        <h2 class="title is-3 section-title">Results</h2>
         <hr class="enhanced-hr">
-        <div class="content has-text-justified">
-          <p>Summary of results reported in the paper. Replace placeholder values with the exact numbers from the paper.</p>
+                <!-- First row of tables -->
+        <div class="columns is-variable is-5">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Task Evaluation</h3>
+            <div class="table-container">
+              <table class="table is-striped is-fullwidth is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Task</th>
+                    <th>Success rate</th>
+                    <th>Avg. time (s)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Tape task</td><td>6 / 10 (60%)</td><td>17.61</td></tr>
+                  <tr><td>Lantern task</td><td>8 / 10 (80%)</td><td>21.61</td></tr>
+                  <tr><td>Stack blocks</td><td>7 / 10 (70%)</td><td>25.89</td></tr>
+                  <tr><td>Flip cube</td><td>10 / 10 (100%)</td><td>16.50</td></tr>
+                  <tr><td>Pour</td><td>8 / 10 (80%)</td><td>84.67</td></tr>
+                  <tr><td>Pick and place</td><td>10 / 10 (100%)</td><td>11.90</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Policy Learning (Pickup Box)</h3>
+            <div class="table-container">
+              <table class="table is-striped is-fullwidth is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Policy</th>
+                    <th>Success rate</th>
+                    <th>Avg. time (s)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>ACT</td><td>10 / 10 (100%)</td><td>9.16</td></tr>
+                  <tr><td>Diffusion</td><td>8 / 10 (80%)</td><td>23.88</td></tr>
+                  <tr><td>SmolVLA</td><td>7 / 10 (70%)</td><td>33.84</td></tr>
+                  <tr><td>Human operator</td><td>10 / 10 (100%)</td><td>12.08</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <div class="table-container">
-          <table class="table is-striped is-fullwidth is-hoverable">
-            <thead>
-              <tr>
-                <th>Task</th>
-                <th>Setting</th>
-                <th>Embodiment</th>
-                <th>Policy</th>
-                <th>Metric</th>
-                <th>Result</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Pickup</td>
-                <td>Autonomous</td>
-                <td>Arm / Humanoid</td>
-                <td>DiffusionPolicy / SmolVLA</td>
-                <td>Success Rate</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>Flip Cube</td>
-                <td>Teleop</td>
-                <td>Arm / Humanoid</td>
-                <td>—</td>
-                <td>Success Rate</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>Pour</td>
-                <td>Teleop</td>
-                <td>Arm / Humanoid</td>
-                <td>—</td>
-                <td>Success Rate</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>Stack Blocks</td>
-                <td>Teleop</td>
-                <td>Arm / Humanoid</td>
-                <td>—</td>
-                <td>Success Rate</td>
-                <td>—</td>
-              </tr>
-              <tr>
-                <td>Tape Insert</td>
-                <td>Teleop</td>
-                <td>Arm / Humanoid</td>
-                <td>—</td>
-                <td>Success Rate</td>
-                <td>—</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <!-- Second row of tables -->
+        <div class="columns is-variable is-5">
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Expert Comparison</h3>
+            <div class="columns">
+              <div class="column is-half">
+                <h4 class="title is-6 has-text-grey">Success Rate</h4>
+                <div class="table-container">
+                  <table class="table is-striped is-fullwidth is-hoverable">
+                    <thead>
+                      <tr><th>Task</th><th>OpenTeach</th><th>BEAVR</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Flip cube</td><td>1.0</td><td>1.0</td></tr>
+                      <tr><td>Pour</td><td>0.8</td><td>0.8</td></tr>
+                      <tr><td>Pick & Place</td><td>0.8</td><td>1.0</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="column is-half">
+                <h4 class="title is-6 has-text-grey">Median time (s)</h4>
+                <div class="table-container">
+                  <table class="table is-striped is-fullwidth is-hoverable">
+                    <thead>
+                      <tr><th>Task</th><th>OpenTeach</th><th>BEAVR</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Flip cube</td><td>2.85</td><td>13.32</td></tr>
+                      <tr><td>Pour</td><td>14.83</td><td>28.92</td></tr>
+                      <tr><td>Pick & Place</td><td>11.88</td><td>9.72</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="column is-half">
+            <h3 class="title is-5 subsection-title">Network Performance</h3>
+            <div class="table-container">
+              <table class="table is-striped is-fullwidth is-hoverable">
+                <thead>
+                  <tr>
+                    <th>Component</th>
+                    <th>Target Hz</th>
+                    <th>Achieved Hz</th>
+                    <th>Jitter (ms)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>XArm7 (single)</td><td>30</td><td>29.93</td><td>0.90</td></tr>
+                  <tr><td>LEAP (single)</td><td>30</td><td>29.69</td><td>0.19</td></tr>
+                  <tr><td>XArm7 (bimanual)</td><td>30</td><td>29.93</td><td>0.89</td></tr>
+                  <tr><td>LEAP (bimanual)</td><td>30</td><td>29.61</td><td>0.21</td></tr>
+                  <tr><td>XArm7 (high freq)</td><td>90</td><td>99.18</td><td>0.75</td></tr>
+                  <tr><td>LEAP (high freq)</td><td>90</td><td>97.22</td><td>0.13</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
-        <p class="has-text-grey is-size-7">Populate with exact values from the paper [<a href="https://arxiv.org/abs/2508.09606" target="_blank" rel="noopener">arXiv</a>].</p>
+        <p class="has-text-grey is-size-7">All metrics per the paper [<a href="https://arxiv.org/abs/2508.09606" target="_blank" rel="noopener">arXiv</a>].</p>
       </div>
     </div>
   </div>
 </section>
-<!-- End results table -->
+<!-- End Unified Results Section -->
 
 <!--BibTex citation -->
-  <section class="section hero is-light" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title section-title">BibTeX</h2>
       <pre><code>@misc{posadasnava2025beavr,
